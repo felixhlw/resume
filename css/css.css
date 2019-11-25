@@ -114,6 +114,11 @@ body
 .di
 {
 	display:inline-block;
+
+}
+.edit{
+	height: 88%;
+	overflow: auto;
 }
 .ad
 {

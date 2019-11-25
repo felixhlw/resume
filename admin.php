@@ -84,6 +84,7 @@
 			<div class="di"
 				style="height:540px; border:#999 1px solid; width:76.5%; margin:2px 0px 0px 0px; float:left; position:relative; left:20px;">
 				<!--正中央-->
+				<div class="title">
 				<table width="100%">
 					<tbody>
 						<tr>
@@ -95,6 +96,9 @@
 						</tr>
 					</tbody>
 				</table>
+				</div>
+			<div class="edit">
+				
 			<!--載入main檔-->
 			<?php
 			 //include "main.php"
@@ -110,6 +114,7 @@
 			 
 			 
 			 ?>
+			 </div>
 
 			</div>
 			<div id="alt"
