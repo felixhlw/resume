@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0040)http://127.0.0.1/test/exercise/collage/? -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+
+  <script src="https://cdn.tiny.cloud/1/5q3zvwe0pzr0f716c1ox0e601x3aqkkb7ebzaduv1v3sq1qv/tinymce/5/tinymce.min.js"></script>
+  <script>tinymce.init({selector:'textarea'});</script>
+  <style>
+  div{
+      width: 800px;
+      height: 500px;
+  }
+  </style>
+
+</head>
+<body>
+    <div>
+
+            <form method="post" action="get_content.php">
+                    <textarea id="editor1" name="editor1">TinyMCE</textarea>
+                    <button onclick="check(this.form)">Submit</button>
+                    <input type="hidden" name="content">
+                  </form>
+                  <script>
+                    tinyMCE.init({      
+                      selector:'#editor1',
+                      auto_focus:'editor1'
+                      });
+                    function check(formObj){
+                      var content=tinymce.get("editor1").getContent();
+                      content="編輯的內容 : <br>" + content;
+                      formObj.content.value=content;
+                      /* alert(content); */
+                      formObj.submit();
+                      }
+                  </script>
+    </div>
+</body>
+</html>

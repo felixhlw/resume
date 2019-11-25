@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0040)http://127.0.0.1/test/exercise/collage/? -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
+    <meta charset="utf-8">
+    <title>TinyMCE 測試</title>
+    <script src="https://cdn.tiny.cloud/1/5q3zvwe0pzr0f716c1ox0e601x3aqkkb7ebzaduv1v3sq1qv/tinymce/5/tinymce.min.js"></script>
+    <script>tinymce.init({selector:'textarea'});</script>
+    <script src="./js/jquery-1.9.1.min.js"></script>
+  </head>
+  <body>
+    <form method="post" action="index3.htm">
+      <textarea id="editor1">
+
+        </textarea>
+      <button onclick="get_content()">Get content</button>
+      <button onclick="set_content()">Set content</button>
+    </form>
+    <script>
+      tinyMCE.init({
+        selector:'#editor1'
+        });
+
+      function get_content(){
+        var content=tinymce.get("editor1").getContent();  //以 id 取得物件
+        alert(content);
+        }
+        function set_content(){
+        tinymce.get("editor1").setContent('Hello World! 這是 TinyMCE!');
+        }
+     a="<h1>testetstetsetets</h1><br>123123";
+ /*     $("editor1").text(a);  */
+     document.getElementById("editor1").textContent = a;
+
+    </script>
+  </body>
+</script>
+</head>
+<html>
