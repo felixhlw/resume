@@ -4,9 +4,9 @@
 		<table width="100%">
 			<tbody>
 				<tr class="yel">
-					<td width="45%">網站標題</td>
-					<td width="23%">替代文字</td>
-					<td width="7%">顯示</td>
+					<td width="45%">帳號</td>
+					<td width="23%">密碼</td>
+			
 					<td width="7%">刪除</td>
 					<td></td>
 				</tr>
@@ -17,7 +17,7 @@
 				<tr>
 					<td width="200px"><input type="button"
 							onclick="op(&#39;#cover&#39;,&#39;#cvr&#39;,&#39;view.php?do=title&#39;)"
-							value="新增網站標題圖片"></td>
+							value="新增管理者帳號"></td>
 					<td class="cent"><input type="submit" value="修改確定"><input type="reset" value="重置">
 					</td>
 				</tr>

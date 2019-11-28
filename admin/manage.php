@@ -28,7 +28,7 @@ if(!empty($_FILES) && $_FILES['pic']['error']==0){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>檔案管理功能</title>
+    <title>履歷檔案管理功能</title>
  <!--    <link rel="stylesheet" href="style.css"> -->
     <style>
 /*     a{
@@ -42,7 +42,7 @@ if(!empty($_FILES) && $_FILES['pic']['error']==0){
     </style>
 </head>
 <body>
-<h1 class="header">相片管理</h1>
+<h1 class="header">履歷管理</h1>
 <!----建立上傳檔案表單及相關的檔案資訊存入資料表機制----->
 <form action="admin.php?do=pic" method="post" enctype="multipart/form-data">
   檔案：<input type="file" name="pic" ><br><br>

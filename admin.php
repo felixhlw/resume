@@ -33,9 +33,9 @@
 						<div class="mainmu">
 							網站標題管理 </div>
                     </a>
-                    <a style="color:#000; font-size:13px; text-decoration:none;" href="?do=pic">
+                    <a style="color:#000; font-size:13px; text-decoration:none;" href="?do=manage">
 						<div class="mainmu">
-							相片圖片管理 </div>
+							履歷管理 </div>
 					</a>
 					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=info">
 						<div class="mainmu">
